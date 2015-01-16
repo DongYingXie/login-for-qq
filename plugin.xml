@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="cn.debi.cordova" version="0.0.1" 
+        xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>qqlogin</name>
+    <description>Description</description>
+    <js-module name="qqlogin" src="www/qqlogin.js">
+        <clobbers target="QQ"/>
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="qqlogin">
+                <param name="android-package" value="cn.debi.cordova.qqlogin"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/qqlogin.java" target-dir="src/cn/debi/cordova"/>
+    </platform>
+
+
+ <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="qqlogin">
+                <param name="ios-package" value="qqlogin"/>
+            </feature>
+    </config-file>
+    <header-file src="src/ios/qqlogin.h"/>
+    <source-file src="src/ios/qqlogin.m" />
+    </platform>
+
+</plugin>

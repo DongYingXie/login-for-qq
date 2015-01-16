@@ -1,0 +1,22 @@
+
+ QQ.Login("test",function(message){
+ 	alert(message);
+ 	console.log(message);
+ },function(message){
+   alert(message);
+   console.log(message);
+ });
+  QQ.Logout("test",function(message){
+ 	alert(message);
+ 	console.log(message);
+ },function(message){
+   alert(message);
+   console.log(message);
+ });
+    QQ.Sharetoqq("test",function(message){
+ 	alert(message);
+ 	console.log(message);
+ },function(message){
+   alert(message);
+   console.log(message);
+ });
